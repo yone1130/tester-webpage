@@ -4,13 +4,15 @@
 
 ## Overview
 
-A web page is for access test.
+Web page is for access test.
 
 Published at https://test.yoneyo.com/ .
 
 ## Usage
 
 Deploy directory `src/`.
+
+Since it has a zero-build, no-framework, serverless architecture, it can be deployed in any way.
 
 ## License
 
