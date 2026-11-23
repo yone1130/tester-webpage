@@ -13,55 +13,55 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- Meta -->
     <title>Test Page</title>
     <meta name="description" content="This page is for test.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#FFFFFF">
+
+    <!-- OGP -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Test Page">
+    <meta property="og:title" content="Test Page">
+    <meta property="og:description" content="This page is for test.">
+    <meta property="og:locale" content="en">
+    <meta name="twitter:card" content="summary">
 
     <style>
-        @font-face {
-            font-family: "Local Noto Sans JP";
-            src: local("Noto Sans JP");
+        :root {
+            --font-family: 'Noto Sans', sans-serif;
+            --font-size: 100%;
+            --background-color: #eee;
+            ----text-color: #222;
+            font-family: var(--font-family);
+            font-size: var(--font-size);
+            color: var(--text-color);
         }
 
-        :root {
-            --bg-color: #eee;
-            --font-family: 'Local Noto Sans JP', 'Noto Sans JP', sans-serif;
-            --font-size: 14px;
-            --font-weight: 400;
-            --color: #222;
-
-            font-size: var(--font-size);
-            font-weight: var(--font-weight);
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font: inherit;
         }
 
         body {
-            background-color: var(--bg-color);
-            font-family: var(--font-family);
-            font-size: var(--font-size);
-            font-weight: var(--font-weight);
-            color: var(--color);
-            margin: 0;
-            padding: 0;
-        }
-
-        body * {
-            margin: 0;
-            padding: 0;
+            background-color: var(--background-color);
         }
 
         main {
             display: flex;
-
-            box-sizing: border-box;
-            padding: 2rem;
             width: 100%;
             min-height: 100dvh;
-
+            padding: 2rem;
             flex-direction: column;
             align-items: center;
             gap: 1rem;
             text-align: center;
-
         }
 
         .content {
